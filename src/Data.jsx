@@ -15,6 +15,7 @@ import mysql from './assets/mysql-logo.svg';
 import postgresql from './assets/postgresql.svg';
 import postman from './assets/postman.svg';
 import pug from './assets/pug.svg';
+import mongo from './assets/mongo.svg';
 
 // =========  IMAGE OF PROJECT =========  //
 import projectImg1 from './assets/bienes.png';
@@ -182,6 +183,13 @@ export const skill = [
     id: 10,
     img: postman,
     title: 'Postman',
+    category: 'backend',
+  },
+
+  {
+    id: 11,
+    img: mongo,
+    title: 'MongoDB',
     category: 'backend',
   }
 ];

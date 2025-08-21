@@ -101,7 +101,7 @@ export const personalInfo = [
 // =========  STATS  =========  //
 export const stats = [
   {
-    no: '2+',
+    no: '1+',
     title: 'Años de <br /> Experiencia',
   },
 

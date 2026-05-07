@@ -63,6 +63,18 @@ export default function About() {
               })}
             </div>
           </article>
+          
+          <article className="skills__group">
+            <h3 className="skills__title">Herramientas</h3>
+               <div className="skills__items grid">
+              {skill.map((val) =>{
+                if(val.category === 'tools'){
+                  return <SkillsItems key={val.id} {...val} />
+                }
+              })}
+            </div>
+          </article>
+        
         </div>
       </section>
       

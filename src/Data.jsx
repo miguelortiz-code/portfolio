@@ -16,11 +16,16 @@ import postgresql from './assets/postgresql.svg';
 import postman from './assets/postman.svg';
 import pug from './assets/pug.svg';
 import mongo from './assets/mongo.svg';
+import git from './assets/git.svg';
+import github from './assets/github.svg';
+import vite from './assets/vite.svg';
+import vercel from  './assets/vercel.svg';
+import handlebars from './assets/handlebars.svg';
 
 // =========  IMAGE OF PROJECT =========  //
-import projectImg1 from './assets/bienes.png';
-// import projectImg2 from './assets/project-2.jpg';
-// import projectImg3 from './assets/project-3.jpg';
+import projectImg1 from './assets/projects/bienes.png';
+import projectImg2 from './assets/projects/devJobs.png';
+import projectImg3 from './assets/projects/aya-ingenieria.png';
 // import projectImg4 from './assets/project-4.jpg';
 // import projectImg5 from './assets/project-5.jpg';
 // =========  CHANGE THEME =========  //
@@ -74,7 +79,7 @@ export const personalInfo = [
 
   {
     title: 'Edad : ',
-    description: '22 Años',
+    description: '23 Años',
   },
 
   // {
@@ -101,12 +106,12 @@ export const personalInfo = [
 // =========  STATS  =========  //
 export const stats = [
   {
-    no: '2+',
+    no: '1+',
     title: 'Años de <br /> Experiencia',
   },
 
   {
-    no: '8+',
+    no: '4+',
     title: 'Proyectos <br /> Completados',
   },
 ];
@@ -191,13 +196,66 @@ export const skill = [
     img: mongo,
     title: 'MongoDB',
     category: 'backend',
+  },
+
+  // TOOLS
+  {
+    id: 13,
+    img: git,
+    title: 'Git',
+    category: 'tools',
+  },
+
+  {
+    id: 14,
+    img: github,
+    title: 'GitHub',
+    category: 'tools',
+  },
+  {
+    id: 15,
+    img: vite,
+    title: 'Vite',
+    category: 'tools',
+  },
+  {
+    id: 16,
+    img: vercel,
+    title: 'Vercel',
+    category: 'tools',
   }
 ];
 
 // =========  RESUME  =========  //
-export const resume = [
+export const resume = [  
   {
     id: 1,
+    category: 'experience',
+    icon: <RiBriefcase4Fill />,
+    year: 'Octubre 2025 - Febrero 2026',
+    title: 'Meeti <span> Bogotá, (Proyecto freelance) </span>',
+    desc: `Desarrollo de una plataforma web de reuniones presenciales o virtual bajo arquitectura MVC, utilizando EJS como motor de plantillas, PostgreSQL (Sequelize). Permite crear meeti's y gestionar grupos, comunidad y un panel administrativo para administrar categoria, usuarios y reuniones.`,
+  },
+  {
+    id: 2,
+    category: 'experience',
+    icon: <RiBriefcase4Fill />,
+    year: 'Junio 2025 - Julio 2025',
+    title: 'DevJobs <span> Bogotá, (Proyecto freelance) </span>',
+    desc: `Desarrollo de una plataforma web de empleos con Node.js bajo arquitectura MVC, utilizando Handlebars como motor de plantillas, MongoDB (Mongoose). Permite publicar y gestionar vacantes, postulación de candidatos con envío de CV y un panel administrativo para administrar vacantes, usuarios y candidatos.`,
+  },
+
+  {
+    id: 3,
+    category: 'experience',
+    icon: <RiBriefcase4Fill />,
+    year: 'Junio 2025 - Julio 2025',
+    title: 'Bienes Raíces <span> Bogotá, (Proyecto freelance) </span>',
+    desc: `Desarrollo de una plataforma de bienes raíces con Node.js bajo arquitectura MVC, utilizando Pug como motor de plantillas, Sequelize como ORM con operaciones CRUD de propiedades, permitiendo a los usuarios publicar y gestionar inmuebles.`,
+  },
+  
+  {
+    id: 4,
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Abril 2024 - Noviembre 2024',
@@ -207,16 +265,7 @@ export const resume = [
   },
 
   {
-    id: 2,
-    category: 'experience',
-    icon: <RiBriefcase4Fill />,
-    year: 'Junio 2025 - Julio 2025',
-    title: 'Bienes Raíces <span> Bogotá, (Proyecto freelance) </span>',
-    desc: `Desarrollo de una plataforma de bienes raíces con Node.js bajo arquitectura MVC, utilizando Pug como motor de plantillas, Sequelize como ORM con operaciones CRUD de propiedades, permitiendo a los usuarios publicar y gestionar inmuebles.`,
-  },
-
-  {
-    id: 3,
+    id: 5,
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Junio 2022 - Diciembre 2022',
@@ -225,7 +274,7 @@ export const resume = [
   },
 
   {
-    id: 4,
+    id: 6,
     category: 'education',
     icon: <RiGraduationCapFill />,
     year: 'Mayo 2023 - Actual',
@@ -233,7 +282,7 @@ export const resume = [
   },
 
   {
-    id: 5,
+    id: 7,
     category: 'education',
     icon: <RiGraduationCapFill />,
     year: 'Noviembre 2020 - Diciembre 2022',
@@ -243,6 +292,7 @@ export const resume = [
 
 // =========  PORTFOLIO  =========  //
 export const portfolio = [
+  // Bienes Raices
   {
     id: 1,
     img: projectImg1,
@@ -254,31 +304,29 @@ export const portfolio = [
     git:'https://github.com/miguelortiz-code/bienes-raices',
     development: ['Backend']
   },
+  // DevJobs
+  {
+    id: 2,
+    img: projectImg2,
+    title: 'DevJobs',
+    description:`
+    La aplicación permite a los usuarios postularse a vacantes, subir su CV y contactar directamente con los reclutadores interesados. También incluye una interfaz administrativa para que los reclutadores publiquen vacantes, gestionen candidatos y visualicen información detallada de cada postulación de forma eficiente.`,
+    skills: [node, mongo, handlebars,css],
+    link: 'https://devjobs-1r4u.onrender.com/',
+    git:'https://github.com/miguelortiz-code/devjobs',
+    development: ['Backend']
+  },
 
-  // {
-  //   id: 2,
-  //   img: projectImg2,
-  //   title: 'Food Product Design',
-  //   description:`
-  //   La aplicación permite a los usuarios publicar propiedades para vender o arrendar , visualizar información detallada de cada inmueble y enviar mensajes directos a los vendedores interesados. También incluye una interfaz administrativa para gestionar propiedades, mensajes de forma eficiente.`,
-  //   skills: [figma, node],
-  //   link: 'https://www.google.com',
-  //   git:'https://www.github.com',
-  //   development: ['Backend']
-  // },
-
-  // {
-  //   id: 3,
-  //   img: projectImg3,
-  //   title: 'Restaurant Landing Page',
-  //   description:`
-  //   La aplicación permite a los usuarios publicar propiedades para vender o arrendar , visualizar información detallada de cada inmueble y enviar mensajes directos a los vendedores interesados También incluye una interfaz administrativa para gestionar propiedades, mensajes de forma eficiente.
-  //   `,
-  //   skills: [html, css, js],
-  //   link: 'https://www.google.com',
-  //   git:'https://www.github.com',
-  //   development: ['Frontend']
-  // },
+  {
+    id: 3,
+    img: projectImg3,
+    title: 'Aya Ingeneria',
+    description:`Desarrollo de una página web informativa sobre energía renovable, enfocada en presentar servicios, beneficios y soluciones sostenibles mediante una interfaz moderna y responsiva. Implementación de diseño adaptable y optimización visual para mejorar la experiencia de usuario y la navegación`,
+    skills: [react, tailwind],
+    link: 'https://seagreen-bear-171627.hostingersite.com/',
+    git:'https://github.com/miguelortiz-code/aya-ingeneria',
+    development: ['Frontend']
+  },
 
   // {
   //   id: 4,

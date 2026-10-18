@@ -12,7 +12,9 @@ export default function Contact() {
     message: "",
   });
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [messageColor, setMmessageColor] = useState("");
+  const [messageColor, setMessageColor] = useState("");
+  const [status, setStatus] = useState(null);
+  const [sending, setSending] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -32,7 +34,7 @@ export default function Contact() {
     if (!formData.message) errors.message = "El mensaje no puede ir vacío";
 
     if (Object.keys(errors).length > 0) {
-      setMmessageColor("color__red");
+      setMessageColor("color__red");
       setFeedbackMessage(errors);
       setTimeout(
         () =>
@@ -47,27 +49,27 @@ export default function Contact() {
       return;
     }
 
+    setStatus(null);
+    setSending(true);
     emailjs
       .sendForm("service_rno1f6k", "template_ysf7oxi", form.current, {
         publicKey: "g6Ikdc3d3epCbdppV",
       })
       .then(
         () => {
-          setMmessageColor("color__green");
-          setFeedbackMessage("Mensaje Enviado ✅");
-          setTimeout(() => setFeedbackMessage(""), 5000);
+          setStatus({ type: "success", text: "Mensaje enviado. Te responderé pronto." });
+          setTimeout(() => setStatus(null), 5000);
           setFormData({ name: "", email: "", subject: "", message: "" });
-          return;
         },
         (error) => {
           console.error("Error al enviar el correo:", error);
-          alert(
-            `Hubo un error al enviar el correo: ${
-              error.text || "Intenta más tarde"
-            }`
-          );
+          setStatus({
+            type: "error",
+            text: "No se pudo enviar el mensaje. Intenta de nuevo o escríbeme a miguelortiz.code@gmail.com.",
+          });
         }
-      );
+      )
+      .finally(() => setSending(false));
   };
 
   return (
@@ -169,13 +171,21 @@ export default function Contact() {
           </div>
 
           <div className="contact__button">
-            <button type="submit" className="button">
-              enviar mensaje
+            <button type="submit" className="button" disabled={sending}>
+              {sending ? "enviando..." : "enviar mensaje"}
               <span className="button__icon">
                 <RiSendPlaneFill />
               </span>
             </button>
           </div>
+          {status && (
+            <p
+              className={`contact__status ${status.type === "success" ? "color__green" : "color__red"}`}
+              role="status"
+            >
+              {status.text}
+            </p>
+          )}
         </form>
       </div>
     </section>

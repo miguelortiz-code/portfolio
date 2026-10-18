@@ -65,4 +65,10 @@
 
 .nav__close, .nav__toggle{
     display: none;
+    padding: 0;
+    font: inherit;
+}
+
+.nav__toggle{
+    border: none;
 }

@@ -15,7 +15,7 @@ export default function Navbar() {
           {links.map(({name, icon, path}, index) =>{
             return(
               <li className='nav__item' key={index}>
-                <NavLink to={path} className={({isActive }) => isActive ? 'nav__link active__nav' : 'nav__link'} onClick={() => setShowMenu(!showMenu)}>
+                <NavLink to={path} className={({isActive }) => isActive ? 'nav__link active__nav' : 'nav__link'} onClick={() => setShowMenu(false)}>
                   {icon}
                   <h3 className='nav__name'>{name}</h3>
                 </NavLink>
@@ -23,13 +23,13 @@ export default function Navbar() {
             )
           })}
         </ul>
-        <div className='nav__close' onClick={() => setShowMenu(!showMenu)}>
+        <button type='button' className='nav__close' aria-label='Cerrar menú' onClick={() => setShowMenu(false)}>
           <RiCloseLargeLine  />
-        </div>
+        </button>
       </div>
-      <div className='nav__toggle' onClick={() => setShowMenu(!showMenu)}>
+      <button type='button' className='nav__toggle' aria-label='Abrir menú' aria-expanded={showMenu} onClick={() => setShowMenu(true)}>
         <RiMenuLine />
-      </div>
+      </button>
     </nav>
   )
 }

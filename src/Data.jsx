@@ -240,7 +240,7 @@ export const resume = [
     id: 2,
     category: 'experience',
     icon: <RiBriefcase4Fill />,
-    year: 'Junio 2025 - Julio 2025',
+    year: 'Julio 2025 - Agosto 2025',
     title: 'DevJobs <span> Bogotá, (Proyecto freelance) </span>',
     desc: `Desarrollo de una plataforma web de empleos con Node.js bajo arquitectura MVC, utilizando Handlebars como motor de plantillas, MongoDB (Mongoose). Permite publicar y gestionar vacantes, postulación de candidatos con envío de CV y un panel administrativo para administrar vacantes, usuarios y candidatos.`,
   },

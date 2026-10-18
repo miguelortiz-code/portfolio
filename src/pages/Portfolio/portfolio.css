@@ -51,6 +51,14 @@
     max-width: 1.5rem;
 }
 
+.portfolio__note {
+    font-size: var(--smaller-font-size);
+    font-style: italic;
+    opacity: 0.75;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
 .portfolio__links {
     display: flex;
     align-items: center;

@@ -15,7 +15,7 @@ export default function Portfolio() {
 
       {/* ----- FILTRO DE PROYECTOS ----- */}
       <div className='portfolio__filter container'>
-        <label htmlFor="filter">Filtrar por categoria</label>
+        <label htmlFor="filter">Filtrar por categoría</label>
          <select
           id="filter"
           value={type}
@@ -30,7 +30,7 @@ export default function Portfolio() {
 
       {/* ----- CONTENEDOR DE PROYECTOS -----  */}
       <div className="portfolio__container container grid">
-        {projectsFilter.map(({id, img, title, description, skills, link, git}) =>{
+        {projectsFilter.map(({id, img, title, description, skills, link, git, note}) =>{
             return (
               <article className='portfolio__card' key={id}>
                   <img src={img} alt={`Imagen de ${title}`} className='portfolio__img' />
@@ -38,17 +38,18 @@ export default function Portfolio() {
                 <p className="portfolio__description">{description}</p>
                 
                 <div className="portfolio__skills">
-                  {skills.map((skill, index) =>{
-                    return <img src={skill} className='portfolio__skill' key={index} />
+                  {skills.map(({ img: icon, name }) =>{
+                    return <img src={icon} alt={name} title={name} className='portfolio__skill' key={name} />
                   })}
                 </div>
+                {note && <p className="portfolio__note">{note}</p>}
                 <div className="portfolio__links">
                   <a href={link} target='_blank' rel='noopener noreferrer' className='portfolio__link' title='Ver proyecto'>
                     <RiLink  className='portfolio__icon'/>
                     ver proyecto
                   </a>
                   
-                  <a href={git} target='_blank' rel='noopener noreferrer' className='portfolio__link' title='Ver proyecto'>
+                  <a href={git} target='_blank' rel='noopener noreferrer' className='portfolio__link' title='Ver repositorio'>
                     <RiGithubFill  className='portfolio__icon'/>
                     ver repositorio
                   </a>

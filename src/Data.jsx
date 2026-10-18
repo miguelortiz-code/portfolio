@@ -26,8 +26,6 @@ import handlebars from './assets/handlebars.svg';
 import projectImg1 from './assets/projects/bienes.png';
 import projectImg2 from './assets/projects/devJobs.png';
 import projectImg3 from './assets/projects/aya-ingenieria.png';
-// import projectImg4 from './assets/project-4.jpg';
-// import projectImg5 from './assets/project-5.jpg';
 // =========  CHANGE THEME =========  //
 import Theme1 from './assets/red.png';
 import Theme2 from './assets/blueviolet.png';
@@ -78,16 +76,6 @@ export const personalInfo = [
   },
 
   {
-    title: 'Edad : ',
-    description: '23 Años',
-  },
-
-  // {
-  //   title: 'Dirección : ',
-  //   description: 'Tv 36 # 58 C Sur - 90, Bogotá',
-  // },
-
-  {
     title: 'Celular : ',
     description: '+57 300 298 8345',
   },
@@ -99,7 +87,7 @@ export const personalInfo = [
 
   {
     title: 'Idiomas : ',
-    description: 'Español, Ingles',
+    description: 'Español (nativo), Inglés (básico)',
   },
 ];
 
@@ -233,16 +221,16 @@ export const resume = [
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Octubre 2025 - Febrero 2026',
-    title: 'Meeti <span> Bogotá, (Proyecto freelance) </span>',
-    desc: `Desarrollo de una plataforma web de reuniones presenciales o virtual bajo arquitectura MVC, utilizando EJS como motor de plantillas, PostgreSQL (Sequelize). Permite crear meeti's y gestionar grupos, comunidad y un panel administrativo para administrar categoria, usuarios y reuniones.`,
+    title: 'Meeti <span> Bogotá (Proyecto freelance) </span>',
+    desc: `Desarrollo de una plataforma web de reuniones presenciales o virtuales bajo arquitectura MVC, utilizando EJS como motor de plantillas y PostgreSQL (Sequelize). Permite crear meeti's, gestionar grupos y comunidad, y cuenta con un panel administrativo para administrar categorías, usuarios y reuniones.`,
   },
   {
     id: 2,
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Julio 2025 - Agosto 2025',
-    title: 'DevJobs <span> Bogotá, (Proyecto freelance) </span>',
-    desc: `Desarrollo de una plataforma web de empleos con Node.js bajo arquitectura MVC, utilizando Handlebars como motor de plantillas, MongoDB (Mongoose). Permite publicar y gestionar vacantes, postulación de candidatos con envío de CV y un panel administrativo para administrar vacantes, usuarios y candidatos.`,
+    title: 'DevJobs <span> Bogotá (Proyecto freelance) </span>',
+    desc: `Desarrollo de una plataforma web de empleos con Node.js bajo arquitectura MVC, utilizando Handlebars como motor de plantillas y MongoDB (Mongoose). Permite publicar y gestionar vacantes, postulación de candidatos con envío de CV y un panel administrativo para administrar vacantes, usuarios y candidatos.`,
   },
 
   {
@@ -250,8 +238,8 @@ export const resume = [
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Junio 2025 - Julio 2025',
-    title: 'Bienes Raíces <span> Bogotá, (Proyecto freelance) </span>',
-    desc: `Desarrollo de una plataforma de bienes raíces con Node.js bajo arquitectura MVC, utilizando Pug como motor de plantillas, Sequelize como ORM con operaciones CRUD de propiedades, permitiendo a los usuarios publicar y gestionar inmuebles.`,
+    title: 'Bienes Raíces <span> Bogotá (Proyecto freelance) </span>',
+    desc: `Desarrollo de una plataforma de bienes raíces con Node.js bajo arquitectura MVC, utilizando Pug como motor de plantillas, MySQL y Sequelize como ORM, con operaciones CRUD de propiedades que permiten a los usuarios publicar y gestionar inmuebles.`,
   },
   
   {
@@ -259,9 +247,8 @@ export const resume = [
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Abril 2024 - Noviembre 2024',
-    title: 'Desarrollador (funciones de soporte) <span> Bogotá, (IDNETWORKING) </span>',
-    desc: `Brindar asesoría a clientes a nivel nacional resolviendo inconvenientes en la plataforma LIKE. Desarrollar módulos para reconstruir notas crédito y detectar productos con mayor inactividad. Ejecutar consultas SQL para optimizar datos y mejorar el rendimiento, y realizar configuración remota de impresoras
-    `,
+    title: 'Desarrollador de Soporte <span> IDNetworking, Bogotá </span>',
+    desc: `Desarrollo de módulos para reconstruir notas crédito y detectar los productos con mayor inactividad en la plataforma LIKE. Ejecución y optimización de consultas SQL para corregir datos y mejorar el rendimiento, y soporte técnico a clientes a nivel nacional, incluida la configuración remota de impresoras.`,
   },
 
   {
@@ -269,16 +256,16 @@ export const resume = [
     category: 'experience',
     icon: <RiBriefcase4Fill />,
     year: 'Junio 2022 - Diciembre 2022',
-    title: 'Aprendiz SENA<span>Bogotá,  Jones Lang Lasalle (Practicas) </span>',
-    desc: `Desarrollo de un sistema para el registro y control de inventario de productos (sillas y aires), incluyendo el historial de mantenimientos realizados. Se utilizó HTML, CSS y JavaScript para la interfaz de usuario; PHP para el backend con manejo de rutas; y MySQL para la gestión de datos. El sistema incluye autenticación de usuarios y manejo de sesiones`
+    title: 'Aprendiz de Desarrollo (Etapa práctica SENA) <span> Jones Lang LaSalle, Bogotá </span>',
+    desc: `Desarrollo de un sistema para el registro y control de inventario de productos (sillas y aires), incluyendo el historial de mantenimientos realizados. Se utilizó HTML, CSS y JavaScript para la interfaz de usuario; PHP para el backend con manejo de rutas; y MySQL para la gestión de datos. El sistema incluye autenticación de usuarios y manejo de sesiones.`
   },
 
   {
     id: 6,
     category: 'education',
     icon: <RiGraduationCapFill />,
-    year: 'Mayo 2023 - Actual',
-    title: 'Licenciatura en sistemas Computacionales <span> Universidad Utel  (México) </span>',
+    year: 'Mayo 2023 - Actualidad',
+    title: 'Licenciatura en Sistemas Computacionales <span> Universidad UTEL (virtual, México) </span>',
   },
 
   {
@@ -286,7 +273,7 @@ export const resume = [
     category: 'education',
     icon: <RiGraduationCapFill />,
     year: 'Noviembre 2020 - Diciembre 2022',
-    title: 'Análisis y Desarrollo de Sistemas de información <span> SENA </span>',
+    title: 'Tecnólogo en Análisis y Desarrollo de Sistemas de Información <span> SENA, Bogotá </span>',
   },
 ];
 
@@ -296,11 +283,17 @@ export const portfolio = [
   {
     id: 1,
     img: projectImg1,
-    title: 'Bienes Raices',
+    title: 'Bienes Raíces',
     description: `
-    La aplicación permite a los usuarios publicar propiedades para vender o arrendar , visualizar información detallada de cada inmueble y enviar mensajes directos a los vendedores interesados. También incluye una interfaz administrativa para gestionar propiedades, mensajes de forma eficiente.`,
-    skills: [node, tailwind, pug, mysql],
+    La aplicación permite a los usuarios publicar propiedades para vender o arrendar, visualizar información detallada de cada inmueble y enviar mensajes directos a los vendedores interesados. También incluye una interfaz administrativa para gestionar propiedades y mensajes de forma eficiente.`,
+    skills: [
+      { img: node, name: 'Node.js' },
+      { img: tailwind, name: 'Tailwind CSS' },
+      { img: pug, name: 'Pug' },
+      { img: mysql, name: 'MySQL' },
+    ],
     link: 'https://bienes-raices-10wl.onrender.com/',
+    note: 'Demo alojada en el plan gratuito de Render: la primera carga puede tardar hasta un minuto.',
     git:'https://github.com/miguelortiz-code/bienes-raices',
     development: ['Backend']
   },
@@ -311,8 +304,14 @@ export const portfolio = [
     title: 'DevJobs',
     description:`
     La aplicación permite a los usuarios postularse a vacantes, subir su CV y contactar directamente con los reclutadores interesados. También incluye una interfaz administrativa para que los reclutadores publiquen vacantes, gestionen candidatos y visualicen información detallada de cada postulación de forma eficiente.`,
-    skills: [node, mongo, handlebars,css],
+    skills: [
+      { img: node, name: 'Node.js' },
+      { img: mongo, name: 'MongoDB' },
+      { img: handlebars, name: 'Handlebars' },
+      { img: css, name: 'CSS' },
+    ],
     link: 'https://devjobs-1r4u.onrender.com/',
+    note: 'Demo alojada en el plan gratuito de Render: la primera carga puede tardar hasta un minuto.',
     git:'https://github.com/miguelortiz-code/devjobs',
     development: ['Backend']
   },
@@ -320,39 +319,16 @@ export const portfolio = [
   {
     id: 3,
     img: projectImg3,
-    title: 'Aya Ingeneria',
-    description:`Desarrollo de una página web informativa sobre energía renovable, enfocada en presentar servicios, beneficios y soluciones sostenibles mediante una interfaz moderna y responsiva. Implementación de diseño adaptable y optimización visual para mejorar la experiencia de usuario y la navegación`,
-    skills: [react, tailwind],
+    title: 'AYA Ingeniería',
+    description:`Desarrollo de una página web informativa sobre energía renovable, enfocada en presentar servicios, beneficios y soluciones sostenibles mediante una interfaz moderna y responsiva. Implementación de diseño adaptable y optimización visual para mejorar la experiencia de usuario y la navegación.`,
+    skills: [
+      { img: react, name: 'React' },
+      { img: tailwind, name: 'Tailwind CSS' },
+    ],
     link: 'https://seagreen-bear-171627.hostingersite.com/',
     git:'https://github.com/miguelortiz-code/aya-ingeneria',
     development: ['Frontend']
   },
-
-  // {
-  //   id: 4,
-  //   img: projectImg4,
-  //   title: 'Barbershop Website',
-  //   description:`
-  //   La aplicación permite a los usuarios publicar propiedades para vender o arrendar , visualizar información detallada de cada inmueble y enviar mensajes directos a los vendedores interesados. También incluye una interfaz administrativa para gestionar propiedades, mensajes de forma eficiente.
-  //   `,
-  //   skills: [react, tailwind],
-  //   link: 'https://www.google.com',
-  //   git:'https://www.github.com',
-  //   development: ['Frontend']
-  // },
-
-  // {
-  //   id: 5,
-  //   img: projectImg5,
-  //   title: 'Construction Landing Page',
-  //   description:`
-  //   La aplicación permite a los usuarios publicar propiedades para vender o arrendar , visualizar información detallada de cada inmueble y enviar mensajes directos a los vendedores interesados. También incluye una interfaz administrativa para gestionar propiedades, mensajes de forma eficiente.
-  //   `,
-  //   skills: [html, css, js],
-  //   link: 'https://www.google.com',
-  //   git:'https://www.github.com',
-  //   development: ['Fullstack']
-  // },
 ];
 
 // =========  CONTACT  =========  //
@@ -360,7 +336,7 @@ export const contact = [
   {
     id: 1,
     icon: <FaUser />,
-    title: 'freelancer',
+    title: 'freelance',
     data: 'Disponible ahora mismo'
   },
   {
@@ -378,7 +354,7 @@ export const contact = [
   {
     id: 4,
     icon: <FaPhoneAlt />,
-    title: 'telefono:',
+    title: 'teléfono:',
     data: '(+57) 300 298 83 45'
   },
 ]

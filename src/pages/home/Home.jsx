@@ -20,10 +20,10 @@ export default function Home() {
           <span>Miguel Ortiz </span> <br /> Desarrollador Full Stack
         </h1>
         <p className="home__description">
-          Desarrollador Full Stack con enfoque en interfaces limpias, accesibles
-          y responsivas. Me especializo en construir soluciones modernas que
-          combinan lógica, diseño y rendimiento, priorizando siempre una
-          experiencia fluida para el usuario.
+          Desarrollador Full Stack Junior. Construyo aplicaciones web con
+          React, Node.js y Express sobre PostgreSQL, MySQL y MongoDB, desde el
+          modelado de datos hasta el despliegue: arquitectura MVC, APIs REST,
+          autenticación y paneles administrativos.
         </p>
         <div className="home__links">
           <Link to={"/portfolio"} className="button">
@@ -37,7 +37,7 @@ export default function Home() {
             target="_blank"
             className="button"
           >
-            Contactame
+            Contáctame
             <span className="button__icon">
               <RiWhatsappFill />
             </span>
@@ -59,7 +59,7 @@ export default function Home() {
             target="_blank"
             className="button"
           >
-            linked
+            LinkedIn
             <span className="button__icon">
               <RiLinkedinBoxFill />
             </span>

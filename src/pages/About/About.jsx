@@ -24,7 +24,7 @@ export default function About() {
                 <Info />
               </ul>
 
-              <a href={Cv} download className="button">
+              <a href={Cv} download="CV_Miguel_Aya_Ortiz.pdf" className="button">
                 descargar cv
                 <span className='button__icon'><RiDownloadLine /></span>
               </a>

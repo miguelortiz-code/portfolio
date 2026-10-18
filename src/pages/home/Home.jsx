@@ -5,7 +5,7 @@ import {
   RiGithubFill,
   RiLinkedinBoxFill,
 } from "react-icons/ri";
-import Profile from "../../assets/foto.png";
+import Profile from "../../assets/foto.webp";
 import "./home.css";
 
 export default function Home() {
